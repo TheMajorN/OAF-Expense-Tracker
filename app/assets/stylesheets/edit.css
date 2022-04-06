@@ -1,0 +1,26 @@
+.buttons {
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+}
+
+.buttons a {
+	color: yellow;
+	margin-left: 25px;
+	background-color: #242424;
+	padding: 10px 10px 10px 10px;
+	border-width: 10px;
+	border-radius: 5px;
+	border-color: yellow;
+	font-size: 24px;
+	border: none;
+	text-decoration: none;
+	transition: 0.2s;
+}
+
+.buttons a:hover {
+	color: black;
+	background-color: #4BFFA5;
+	transition: 0.2s;
+}

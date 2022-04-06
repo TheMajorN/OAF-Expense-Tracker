@@ -1,0 +1,59 @@
+* {
+	background-color: black;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	background-color: #4BFFA5;
+	height: 700px;
+	width: 1200px;
+	border-radius: 10px;
+}
+
+.container table {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #4BFFA5;
+	padding: 15px 15px;
+}
+
+.container table thead tr th {
+	text-align: center;
+	font-size: 30px;
+	padding: 20px 40px;
+}
+.container table tbody tr td {
+	text-align: center;
+	padding: 20px 5px;
+	font-size: 24px;
+	color: white;
+}
+
+.container table tbody tr td .modifyButton:hover {
+	border-radius: 10px;
+	background-color: darkred;
+	border-width: 0px;
+	text-align: center;
+	padding: 5px 3px;
+	font-size: 24px;
+	color: white;
+}
+
+.container table tbody tr td a {
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	border-radius: 10px;
+	background-color: darkred;
+	border-width: 0px;
+	text-align: center;
+	font-size: 24px;
+	color: white;
+	transition: 0.2s;
+}
+
+.container table tbody tr td a:hover {
+	background-color: red;
+	transition: 0.2s;
+}

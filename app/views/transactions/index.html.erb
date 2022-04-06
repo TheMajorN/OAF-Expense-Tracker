@@ -1,0 +1,30 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="container">
+ <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Amount</th>
+        <th>Currency</th>
+        <th>Classification</th>
+        <th>Date</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @transactions.each do |transaction| %>
+        <tr>
+          <td><%= transaction.name %></td>
+          <td><%= transaction.amount %></td>
+          <td><%= transaction.currency %></td>
+          <td><%= transaction.classification %></td>
+          <td><%= transaction.date %></td>
+          <td><%= link_to 'Modify', transaction, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+</table>
+</div>

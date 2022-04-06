@@ -1,0 +1,23 @@
+.tcontainer {
+	padding:  5px 5px 5px 5px;
+	width: 800px;
+	border-radius: 10px;
+	background-color: #4BFFA5;
+}
+
+.tcontainer p {
+	border-radius: 5px;
+	padding: 10px 10px 10px 10px;
+	width: 700px;
+	background-color: #242424;
+	color: white;
+	font-size: 30px;
+	margin-left: 50px;
+}
+
+.tcontainer p strong {
+	border-radius: 5px;
+	padding: 10px 10px 10px 10px;
+	color: white;
+	background-color: #242424;
+}

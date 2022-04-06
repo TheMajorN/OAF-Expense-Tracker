@@ -1,0 +1,43 @@
+<div class="formcontainer">
+<div class="error">
+<%= form_with(model: transaction) do |form| %>
+  <% if transaction.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(transaction.errors.count, "error") %> prohibited this transaction from being saved:</h2>
+
+      <ul>
+        <% transaction.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  </div>
+
+
+
+  <div class="name">
+    <%= form.text_field :name, class:"box", placeholder: "Name" %>
+  </div>
+
+  <div class="amount">
+    <%= form.number_field :amount, class:"box", placeholder: "Amount" %>
+  </div>
+
+  <div class="currency">
+    <%= form.text_field :currency, class:"box", placeholder: "Currency" %>
+  </div>
+
+  <div class="classification">
+    <%= form.text_field :classification, class:"box", placeholder: "Classification" %>
+  </div>
+
+  <div class="date">
+    <%= form.date_field :date, class:"box", placeholder: "XX/XX/XXXX" %>
+  </div>
+
+  <div class="addbutton">
+    <%= form.submit "ADD", class:"button" %>
+  </div>
+<% end %>
+</div>
