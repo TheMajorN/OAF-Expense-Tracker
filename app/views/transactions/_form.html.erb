@@ -36,6 +36,10 @@
     <%= form.date_field :date, class:"box", placeholder: "XX/XX/XXXX" %>
   </div>
 
+  <div class="date">
+    <%= form.number_field :user_id, id: :transaction_user_id, class:"box", value: current_user.id, type: :hidden %>
+  </div> 
+
   <div class="addbutton">
     <%= form.submit "ADD", class:"button" %>
   </div>

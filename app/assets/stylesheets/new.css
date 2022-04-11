@@ -2,6 +2,151 @@
 	color: gray;
 }
 
+.signupContainer {
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px 20px 20px 20px;
+	width: 700px;
+	background-color: #4AFFB5;
+	border-radius: 10px;
+}
+
+.signupText {
+	font-size: 40px;
+	color: black;
+	background-color: #4AFFB5;
+}
+
+.signupField {
+	padding-top: 10px;
+	background-color: #4AFFB5;
+}
+
+.signupField em {
+	font-size: 16px;
+	color: black;
+	background-color: #4AFFB5;
+}
+
+.signupField .textLabel {
+	color: black;
+	font-size: 24px;
+	background-color: #4AFFB5;
+}
+
+.signupField .signupFill {
+	font-size: 20px;
+	border: none;
+	border-width: 0px;
+	outline-color: gold;
+	border-radius: 5px;
+	padding: 10px 5px 10px 5px;
+}
+
+.signupActions {
+	background-color: #4AFFB5;
+}
+
+.signupActions .signupButton {
+	font-size: 28px;
+	color: gold;
+	border: none;
+	border-radius: 5px;
+	margin: 15px 5px 25px 5px;
+	padding: 18px 18px 18px 18px;
+	background-color: black;
+	transition: 0.2s;
+}
+
+.signupActions .signupButton:hover {
+	transition: 0.2s;
+	background-color: #424242;
+}
+
+.signupLinks {
+	background-color: #4AFFB5;
+}
+
+.signupLinks * {
+	font-size: 20px;
+	color: blue;
+	background-color: #4AFFB5;
+}
+
+
+.loginContainer {
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px 20px 20px 20px;
+	width: 700px;
+	background-color: #4AFFB5;
+	border-radius: 10px;
+}
+
+.loginText {
+	font-size: 40px;
+	color: black;
+	background-color: #4AFFB5;
+}
+
+.loginContainer .textLabel {
+	color: black;
+	font-size: 24px;
+	background-color: #4AFFB5;
+}
+
+.loginContainer .loginFill {
+	font-size: 20px;
+	border: none;
+	border-width: 0px;
+	outline-color: gold;
+	border-radius: 5px;
+	padding: 10px 5px 10px 5px;
+}
+
+.loginField {
+	padding-top: 10px;
+	background-color: #4AFFB5;
+}
+
+.loginField .rememberLabel {
+	font-size: 16px;
+	color: black;
+	background-color: #4AFFB5;
+}
+
+.loginActions {
+	background-color: #4AFFB5;
+}
+
+.loginActions .loginButton {
+	font-size: 28px;
+	color: gold;
+	border: none;
+	border-radius: 5px;
+	margin: 15px 5px 25px 5px;
+	padding: 18px 18px 18px 18px;
+	background-color: black;
+	transition: 0.2s;
+}
+
+.loginActions .loginButton:hover {
+	transition: 0.2s;
+	background-color: #424242;
+}
+
+.loginLinks {
+	background-color: #4AFFB5;
+}
+
+.loginLinks * {
+	font-size: 16px;
+	color: blue;
+	background-color: #4AFFB5;
+}
+
 .newcontainer {
 	border-radius: 10px;
 	margin-top: 50px;
@@ -9,3 +154,4 @@
 	margin-right: auto;
 	width: 900px;
 }
+

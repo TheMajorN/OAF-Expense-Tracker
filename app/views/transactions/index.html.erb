@@ -1,6 +1,8 @@
 <p style="color: green"><%= notice %></p>
 
-<div class="container">
+<% if user_signed_in? %>
+
+<div class="iContainer">
  <table>
     <thead>
       <tr>
@@ -15,6 +17,7 @@
 
     <tbody>
       <% @transactions.each do |transaction| %>
+        <% if transaction.user == current_user %>
         <tr>
           <td><%= transaction.name %></td>
           <td><%= transaction.amount %></td>
@@ -24,7 +27,15 @@
           <td><%= link_to 'Modify', transaction, method: :delete, data: { confirm: 'Are you sure?' } %>
           </td>
         </tr>
+        <% end %>
       <% end %>
     </tbody>
 </table>
 </div>
+
+<% else %>
+
+<h1>Welcome</h1>
+<h3>Please log in to view your expense tracker</h3>
+
+<% end %>

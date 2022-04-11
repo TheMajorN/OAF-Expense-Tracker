@@ -24,3 +24,110 @@
 	background-color: #4BFFA5;
 	transition: 0.2s;
 }
+
+.editContainer {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px 20px 20px 20px;
+	width: 700px;
+	background-color: #4AFFB5;
+	border-radius: 10px;
+}
+
+.editText {
+	color: black;
+	background-color: #4AFFB5;
+}
+
+.regEditField {
+	padding-top: 10px;
+	background-color: #4AFFB5;
+}
+
+.regEditField i {
+	font-size: 16px;
+	color: black;
+	background-color: #4AFFB5;
+}
+
+.regEditField em {
+	font-size: 16px;
+	color: black;
+	background-color: #4AFFB5;
+}
+
+.editContainer .textLabel {
+	color: black;
+	font-size: 24px;
+	background-color: #4AFFB5;
+}
+
+.editContainer .editFill {
+	font-size: 20px;
+	border: none;
+	border-width: 0px;
+	outline-color: gold;
+	border-radius: 5px;
+	padding: 10px 5px 10px 5px;
+}
+
+.regEditActions {
+	background-color: #4AFFB5;
+}
+
+.regEditActions .updateButton {
+	font-size: 28px;
+	color: gold;
+	border: none;
+	border-radius: 5px;
+	margin: 15px 5px 25px 5px;
+	padding: 18px 18px 18px 18px;
+	background-color: black;
+	transition: 0.2s;
+}
+
+.regEditActions .updateButton:hover {
+	transition: 0.2s;
+	background-color: #424242;
+}
+
+.editContainer .cancel {
+	background-color: #4AFFB5;
+	color: black;	
+}
+
+.editContainer .unhappy {
+	background-color: #4AFFB5;
+	color: black;
+}
+
+.editContainer .button_to {
+	background-color: #4AFFB5;
+}
+
+.editContainer .cancelButton {
+	font-size: 20px;
+	color: gold;
+	border: none;
+	border-radius: 5px;
+	margin: 15px 5px 25px 5px;
+	padding: 10px 10px 10px 10px;
+	background-color: darkred;
+	transition: 0.2s;
+}
+
+.editContainer .cancelButton:hover {
+	background-color: red;
+	transition: 0.2s;
+}
+
+.editLinks {
+	background-color: #4AFFB5;
+}
+
+.editLinks * {
+	font-size: 16px;
+	color: blue;
+	background-color: #4AFFB5;
+}

@@ -2,7 +2,7 @@
 	background-color: black;
 }
 
-.container {
+.iContainer {
 	margin-left: auto;
 	margin-right: auto;
 	color: white;
@@ -12,26 +12,26 @@
 	border-radius: 10px;
 }
 
-.container table {
+.iContainer table {
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #4BFFA5;
 	padding: 15px 15px;
 }
 
-.container table thead tr th {
+.iContainer table thead tr th {
 	text-align: center;
 	font-size: 30px;
 	padding: 20px 40px;
 }
-.container table tbody tr td {
+.iContainer table tbody tr td {
 	text-align: center;
 	padding: 20px 5px;
 	font-size: 24px;
 	color: white;
 }
 
-.container table tbody tr td .modifyButton:hover {
+.iContainer table tbody tr td .modifyButton:hover {
 	border-radius: 10px;
 	background-color: darkred;
 	border-width: 0px;
@@ -41,7 +41,7 @@
 	color: white;
 }
 
-.container table tbody tr td a {
+.iContainer table tbody tr td a {
 	padding: 10px 20px 10px 20px;
 	text-decoration: none;
 	border-radius: 10px;
@@ -53,7 +53,7 @@
 	transition: 0.2s;
 }
 
-.container table tbody tr td a:hover {
+.iContainer table tbody tr td a:hover {
 	background-color: red;
 	transition: 0.2s;
 }
