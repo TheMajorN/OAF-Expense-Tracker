@@ -67,6 +67,10 @@ class TransactionsController < ApplicationController
     redirect_to transactions_path, notice: "Not Authorized To Edit This Transaction" if @transaction.nil?
   end
 
+  def toggle_published
+    @transaction.toggle! :expense
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_transaction

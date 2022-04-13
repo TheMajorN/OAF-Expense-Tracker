@@ -65,6 +65,7 @@
 
 .editContainer .editFill {
 	font-size: 20px;
+	width: 200px;
 	border: none;
 	border-width: 0px;
 	outline-color: gold;

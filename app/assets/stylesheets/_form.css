@@ -2,7 +2,7 @@
 	background-color: #4BFFA5;
 	border-radius: 10px;
 	width: 550px;
-	height: 630px;
+	height: 680px;
 	.margin-left: auto;
 	.margin-right: auto;
 }
@@ -56,6 +56,27 @@
 	width: 500px;
 	background-color: black;
 	margin-bottom: 20px;
+}
+
+.expense {
+	font-size: 30px;
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.expense * {
+	color: black;
+	background-color: #4BFFA5;
+	font-size: 24px;
+}
+
+.expense .expenseBox {
+    height: 25px;
+    width: 25px;
+    background-color: green;
 }
 
 .addbutton {
