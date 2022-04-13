@@ -5,7 +5,8 @@ class TransactionsController < ApplicationController
 
   # GET /transactions or /transactions.json
   def index
-    @transactions = Transaction.all
+    @search = TransactionSearch.new(params[:search])
+    @transactions = @search.scope
   end
 
   # GET /transactions/1 or /transactions/1.json
@@ -14,8 +15,8 @@ class TransactionsController < ApplicationController
 
   # GET /transactions/new
   def new
-    #@transaction = Transaction.new
-    @transaction = current_user.transactions.build
+    @transaction = Transaction.new
+    #@transaction = current_user.transactions.build
   end
 
   # GET /transactions/1/edit
@@ -24,8 +25,8 @@ class TransactionsController < ApplicationController
 
   # POST /transactions or /transactions.json
   def create
-    #@transaction = Transaction.new(transaction_params)
-    @transaction = current_user.transactions.build(transaction_params)
+    @transaction = Transaction.new(transaction_params)
+    #@transaction = current_user.transactions.build(transaction_params)
 
     respond_to do |format|
       if @transaction.save
@@ -62,8 +63,8 @@ class TransactionsController < ApplicationController
   end
 
   def correct_user
-    @transaction = current_user.transactions.find_by(id: params[:id])
-    redirect_to transactions_path, notice: "You are not authorized to edit this transaction." if @transaction.nil?
+    @transaction = Transaction.find_by(id: params[:id])
+    redirect_to transactions_path, notice: "Not Authorized To Edit This Transaction" if @transaction.nil?
   end
 
   private

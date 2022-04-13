@@ -57,3 +57,72 @@
 	background-color: red;
 	transition: 0.2s;
 }
+
+.totalContainer {
+	float: left;
+	position: relative;
+	margin-top: 70px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	height: 100px;
+	width: 200px;
+	background-color: #4BFFA5;
+}
+
+.totalContainer h2 {
+	background-color: #4BFFA5;
+	color: black;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.totalContainer h3 {
+	border-radius: px;
+	text-align: center;
+	font-size: 30px;
+	margin: 5px 5px 5px 5px;
+}
+
+.dateRangeQuery {
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	background-color: #4BFFA5;
+	height: 50px;
+	width: 800px;
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dateRangeQuery .tPath {
+	border-radius: 10px;
+	background-color: #4BFFA5;
+}
+
+.dateRangeQuery .textQ {
+	margin: 5px 5px 5px 5px;
+	padding: 5px 5px 5px 5px;
+	border: 0px;
+	border-radius: 5px;
+	font-size: 24px;
+}
+
+.dateRangeQuery .searchButton {
+	color: white;
+	padding: 5px 5px 5px 5px;
+	font-size: 24px;
+	border:  none;
+	border-radius: 5px;
+	transition: 0.2s;
+}
+
+.dateRangeQuery .searchButton:hover {
+	background-color: white;
+	color: black;
+	transition: 0.2s;
+}

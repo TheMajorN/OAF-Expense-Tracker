@@ -2,6 +2,19 @@
 
 <% if user_signed_in? %>
 
+<div class="totalContainer">
+  <h2>Total Expenditure</h2>
+  <h3><%= Transaction.sum(:amount) %></h3>
+</div>
+
+<div class="dateRangeQuery">
+  <%= form_tag transactions_path, class:"tPath", method: :get do %>
+    <%= text_field_tag 'search[date_from]', @search.date_from, class:"textQ" %>
+    <%= text_field_tag 'search[date_to]', @search.date_to, class:"textQ" %>
+    <%= submit_tag 'Search Range', class:"searchButton" %>
+  <% end %>
+</div>
+
 <div class="iContainer">
  <table>
     <thead>
