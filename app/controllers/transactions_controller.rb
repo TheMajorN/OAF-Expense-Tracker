@@ -7,6 +7,7 @@ class TransactionsController < ApplicationController
   def index
     @search = TransactionSearch.new(params[:search])
     @transactions = @search.scope
+    @accountSearch = Transaction.where(account: "Checking").sum(:income) - Transaction.where(account: "Checking").sum(:amount)
   end
 
   # GET /transactions/1 or /transactions/1.json
@@ -79,6 +80,6 @@ class TransactionsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def transaction_params
-      params.require(:transaction).permit(:name, :amount, :currency, :classification, :date, :user_id)
+      params.require(:transaction).permit(:name, :amount, :income, :currency, :classification, :date, :account, :user_id)
     end
 end

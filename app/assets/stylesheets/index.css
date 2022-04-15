@@ -59,13 +59,22 @@
 	transition: 0.2s;
 }
 
-.totalContainer {
+.expenditureContainer {
 	float: left;
 	position: relative;
 	margin-top: 75px;
 	margin-bottom: 20px;
 	margin-left: 120px;
 	margin-right: auto;
+	border-radius: 10px;
+	height: 130px;
+	width: 200px;
+}
+
+.totalContainer {
+	float: left;
+	margin-top: 10px;
+	position: relative;
 	border-radius: 10px;
 	height: 130px;
 	width: 200px;
@@ -126,4 +135,8 @@
 	background-color: white;
 	color: black;
 	transition: 0.2s;
+}
+
+.accountTable {
+	position: relative;
 }

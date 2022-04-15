@@ -14,18 +14,16 @@
   <% end %>
   </div>
 
-
-
   <div class="name">
     <%= form.text_field :name, class:"box", placeholder: "Name" %>
   </div>
 
-  <div class="amount">
-    <%= form.number_field :amount, class:"box", placeholder: "Amount" %>
+  <div id="expInc" class="amount">
+    <%= form.number_field :amount, class:"box", placeholder: "Expense (Leave blank for income)" %>
   </div>
 
-  <div class="currency">
-    <%= form.text_field :currency, class:"box", placeholder: "Currency" %>
+  <div id="expInc" class="amount">
+    <%= form.number_field :income, class:"box", placeholder: "Income (Leave blank for expense)" %>
   </div>
 
   <div class="classification">
@@ -37,11 +35,15 @@
   </div>
 
   <div class="date">
+  <%= form.text_field :account, class:"box", placeholder: "Account Type" %>
+  </div>
+
+  <div class="date">
     <%= form.number_field :user_id, id: :transaction_user_id, class:"box", value: current_user.id, type: :hidden %>
-  </div> 
+  </div>
 
   <div class="addbutton">
     <%= form.submit "ADD", class:"button" %>
   </div>
 <% end %>
-</div>
+</div

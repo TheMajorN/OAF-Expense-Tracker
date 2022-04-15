@@ -2,9 +2,21 @@
 
 <% if user_signed_in? %>
 
-<div class="totalContainer">
-  <h2>Total Expenditure</h2>
-  <h3><%= Transaction.sum(:amount)  %></h3>
+<div class="expenditureContainer">
+    <div class="totalContainer">
+      <h2>Total Expenditure</h2>
+      <h3>$<%= Transaction.sum(:amount)  %></h3>
+    </div>
+
+    <div class="totalContainer">
+      <h2>Total Income</h2>
+      <h3>$<%= Transaction.sum(:income)  %></h3>
+    </div>
+
+    <div class="totalContainer">
+      <h2>Budget Difference</h2>
+      <h3>$<%= Transaction.sum(:income) - Transaction.sum(:amount) %></h3>
+    </div>
 </div>
 
 <div class="dateRangeQuery">
@@ -20,10 +32,11 @@
     <thead>
       <tr>
         <th>Name</th>
-        <th>Amount</th>
-        <th>Currency</th>
+        <th>Expense</th>
+        <th>Income</th>
         <th>Classification</th>
         <th>Date</th>
+        <th>Account Info</th>
         <th>Action</th>
       </tr>
     </thead>
@@ -34,9 +47,10 @@
         <tr>
           <td><%= transaction.name %></td>
           <td><%= transaction.amount %></td>
-          <td><%= transaction.currency %></td>
+          <td><%= transaction.income %></td>
           <td><%= transaction.classification %></td>
           <td><%= transaction.date %></td>
+          <td><%= transaction.account %> ($<%= Transaction.where(account: transaction.account).sum(:income) - Transaction.where(account: transaction.account).sum(:amount) %>)</td>
           <td><%= link_to 'Modify', transaction, method: :delete, data: { confirm: 'Are you sure?' } %>
           </td>
         </tr>
@@ -44,6 +58,7 @@
       <% end %>
     </tbody>
 </table>
+
 </div>
 
 <% else %>
